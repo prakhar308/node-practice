@@ -1,3 +1,6 @@
+const db = require("../models");
+
 exports.getProducts = async (req, res) => {
-  res.status(200).send({name: "Milk", qty: 1});
+  var products = await db.Product.find();
+  res.status(200).send(products);
 }
