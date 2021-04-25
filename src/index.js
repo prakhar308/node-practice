@@ -1,5 +1,5 @@
 const express = require("express");
-const apiRoutes = require("./routes/festival");
+const apiRoutes = require("./routes/slip");
 
 const app = express();
 const port = 3000;
